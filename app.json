@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Nhật ký sức khoẻ",
+    "slug": "senior-health-diary",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "allowNotifications": true
+    },
+    "android": {
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tuansontdner.seniorhealthdiary",
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "59fa55a6-23de-475d-8d8b-d7155eeedb60"
+      }
+    },
+    "tasks": {
+      "backgroundTask": {
+        "matchOptions": {
+          "minInterval": 1
+        },
+        "taskName": "backgroundTask"
+      }
+    }
+  }
+}
